@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
     <title>To-Do List</title>
 </head>
+
 <body>
     <h1>A Simple To-Do List made using JQuery!</h1>
 
+    <div class="container">
+        <h2>To Do List App</h2>
+        <p><em> Double click to mark an item off, click on "X" to delete an item, and drag items to reorder.</em></p>
+
+        <form name="toDoList">
+            <input type="text" name="ListItem" id="input"/>
+        </form>
+
+        <div onclick="newItem()" id="button">Add</div>
+        <br/>
+        <ol id="list"></ol>
+    </div>
+
 
     <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
